@@ -1,0 +1,49 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.nav{
+    background-color: darkred;
+    padding: 10px;
+    margin-bottom: 1px;
+}
+.nav > h1{
+    margin: 0px 40px;
+    color: whitesmoke;
+    text-align: right;
+}
+.btnDiv{
+    display: flex;
+    justify-content: center;
+}
+.btn{
+    background-color:cadetblue;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    margin: 20px 40px;
+    margin-left: 0px;
+}
+.btn:hover{
+    background-color: aqua;
+    color: black;
+}
+.container{
+    display: flex;
+    margin: 20px auto;
+    flex-wrap: wrap;
+    width: 960px;
+
+}
+.square{
+    width: 15px;
+    height: 15px;
+    border: 1px solid black;
+    display: inline-block;
+}
+
+
+
