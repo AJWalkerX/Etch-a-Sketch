@@ -26,16 +26,24 @@ html,body{
     font-weight: bold;
     margin: 20px 40px;
     margin-left: 0px;
+    margin-right: 10px;
 }
 .btn:hover{
     background-color: aqua;
     color: black;
 }
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
 .container{
     display: flex;
     margin: 20px auto;
     flex-wrap: wrap;
-    width: 960px;
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
 
 }
 .square{
