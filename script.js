@@ -1,7 +1,15 @@
 let color = "black";
+let click = false;
 
 document.addEventListener("DOMContentLoaded", ()=>{
     createSize(16);
+
+    document.querySelector("body").addEventListener("click",(e)=>{
+        if(e.target.tagName != "BUTTON"){
+            click = !click;
+        }
+    });
+
     const btn_changeSize = document.getElementById("changeGrid");
     btn_changeSize.addEventListener("click", ()=>{
         let size = getSize();
@@ -43,18 +51,20 @@ function getSize(){
 }
 
 function colorDiv(){
-    if(color == "random"){
-        this.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`
-    }
-    else if (color == "black"){
-        this.style.backgroundColor = "black";
-    }
-    else if (color == "gray"){
-        this.style.backgroundColor = "gray";
-    }
-    else if (color == "white"){
-        this.style.backgroundColor = "white";
-    }
+    if(click){
+        if(color == "random"){
+            this.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`
+        }
+        else if (color == "black"){
+            this.style.backgroundColor = "black";
+        }
+        else if (color == "gray"){
+            this.style.backgroundColor = "gray";
+        }
+        else if (color == "white"){
+            this.style.backgroundColor = "white";
+        }
+    }    
 
 }
 function setColor(colorChoice){
