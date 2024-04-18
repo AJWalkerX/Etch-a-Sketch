@@ -38,7 +38,7 @@ html,body{
     text-align: center;
 }
 .container{
-    display: flex;
+    display: grid;
     margin: 20px auto;
     flex-wrap: wrap;
     width: 500px;
