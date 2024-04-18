@@ -13,12 +13,14 @@
     </div>
     <div class="wrapper">
         <div id="button" class="btnDiv">
-            <button id="resetGrid" class="btn">Add Grid</button>
-            <button id="black" class="btn">Black</button>
-            <button id="black" class="btn">Gray</button>
-            <button id="random" class="btn">Random</button>
-            <button id="reset" class="btn">Reset</button>
+            <button id="changeGrid" class="btn">Change Board Size</button>
+            <button id="black" class="btn" onclick="setColor('black')">Black</button>
+            <button id="black" class="btn" onclick="setColor('gray')">Gray</button>
+            <button id="random" class="btn" onclick="setColor('random')">Random</button>
+            <button id="Erase" class="btn" onclick="setColor('white')">Erase</button>
+            <button id="reset" class="btn" onclick="resetBoard()">Reset</button>
         </div>
+        <p id="message"></p>
         <div class="container"></div>
     </div>
 </body>
